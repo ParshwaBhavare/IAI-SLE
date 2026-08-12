@@ -9,3 +9,8 @@ Step	 GitHub Copilot Contribution	                                    My Contrib
 8	     Generated the else condition for unknown commands.	              I tested an unknown command and verified the response.
 9	     Suggested the complete basic agent code.	                        I reviewed, corrected, and tested the code in VS Code.
 10	   Explained the generated code and its logic.	                    I studied the explanation and understood the program.
+
+
+Added feature: New command recognition for "give me link of github".<br>
+Output added: AI replies with the URL https://github.com/.<br>
+Flow control: Maintained the existing while True loop and exit/bye break conditions.
