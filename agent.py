@@ -18,6 +18,8 @@ while True:
         print("AI: Hello! How can I help you today?")
     elif user_input == "help":
         print("AI: I can help you with basic questions. Just ask!")
+    elif user_input == "give me link of github":
+        print("AI: https://github.com/")
     elif user_input == "bye":
         print("AI: Goodbye! Have a great day!")
         break
