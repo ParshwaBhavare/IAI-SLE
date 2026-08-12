@@ -1,0 +1,11 @@
+Step	GitHub Copilot Contribution	                                  My Contribution
+1	    Suggested the basic structure of the Python agent.	          I reviewed the suggested structure.
+2	    Generated the while True loop to keep the agent running.	    I understood how the loop works.
+3	    Generated code to take user input using input().	            I tested different user inputs.
+4	    Generated the if condition for the hello command.	            I tested the hello response.
+5	    Generated the elif condition for the help command.	          I checked and understood the help response.
+6	    Generated the bye command and used break to stop the loop.	  I tested the bye command.
+7	    Generated the exit command to terminate the agent.	          I tested the exit functionality.
+8	    Generated the else condition for unknown commands.	          I tested an unknown command and verified the response.
+9	    Suggested the complete basic agent code.	                    I reviewed, corrected, and tested the code in VS Code.
+10	  Explained the generated code and its logic.	                  I studied the explanation and understood the program.
