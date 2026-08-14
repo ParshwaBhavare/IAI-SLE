@@ -13,8 +13,7 @@ def display_sensor_data(soil_moisture, temperature, humidity,
 
 
 # Function for AI decision
-def irrigation_decision(soil_moisture, temperature,
-                        humidity, rainfall, tank_level):
+def irrigation_decision(soil_moisture, temperature, humidity, rainfall, tank_level):
 
     score = 0
 
@@ -89,22 +88,10 @@ def main():
     tank_level = float(input("Enter water tank level (%): "))
 
     # Display sensor data
-    display_sensor_data(
-        soil_moisture,
-        temperature,
-        humidity,
-        rainfall,
-        tank_level
-    )
+    display_sensor_data(soil_moisture,temperature,humidity,rainfall,tank_level )
 
     # AI makes decision
-    decision = irrigation_decision(
-        soil_moisture,
-        temperature,
-        humidity,
-        rainfall,
-        tank_level
-    )
+    decision = irrigation_decision(soil_moisture,temperature,humidity,rainfall,tank_level)
 
     # Calculate watering time
     watering_time = calculate_watering_time(soil_moisture)
