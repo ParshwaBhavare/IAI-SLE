@@ -2,7 +2,7 @@
 
 ## Contribution Log
 
-MY CONTRIBUTION
+**MY CONTRIBUTION**
 
 ### Prompt 1
 
