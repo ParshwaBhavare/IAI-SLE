@@ -26,17 +26,28 @@ I asked AI to explain the Python code in simple language so that I could underst
 
 
  AI Contribution                                                                                                                         
-| Soil moisture condition | AI suggested checking whether soil moisture is below 40%.                      
-| Temperature condition   | AI suggested increasing the score when temperature is above 35°C.             
-| Humidity condition      | AI suggested increasing the score when humidity is below 40%.                  
-| Rainfall condition      | AI suggested reducing the irrigation score when rainfall is greater than 5 mm.                  
-| AI score                | AI suggested using a score to combine different sensor conditions.             
-| Tank-level safety       | AI suggested turning the pump OFF when the tank level is below 20%.               
-| Final pump decision     | AI suggested using `if-elif-else` to decide `PUMP ON` or `PUMP OFF`.          
-| Watering time           | AI suggested different watering times based on soil moisture.                 
-| User input              | AI suggested using `input()` to collect sensor values from the user.           
-| Main function           | AI suggested putting the main program inside a `main()` function.              
-| Program execution       | AI suggested using `if __name__ == "__main__": main()`.                        
+ Soil moisture condition <br>
+ AI suggested checking whether soil moisture is below 40%.<br>                      
+ Temperature condition <br>
+ AI suggested increasing the score when temperature is above 35°C. <br>            
+ Humidity condition<br>   
+ AI suggested increasing the score when humidity is below 40%.<br>
+ Rainfall condition<br>     
+ AI suggested reducing the irrigation score when rainfall is greater than 5 mm. <br>                 
+ AI score            <br>  
+ AI suggested using a score to combine different sensor conditions.  <br>           
+ Tank-level safety  <br>
+ AI suggested turning the pump OFF when the tank level is below 20%.  <br>             
+ Final pump decision <br>
+ AI suggested using `if-elif-else` to decide `PUMP ON` or `PUMP OFF`.<br>          
+ Watering time         <br>
+ AI suggested different watering times based on soil moisture. <br>                
+ User input      <br>
+ AI suggested using `input()` to collect sensor values from the user. <br>          
+ Main function         <br>
+ AI suggested putting the main program inside a `main()` function.<br>              
+ Program execution<br>      
+ AI suggested using `if __name__ == "__main__": main()`.                        
 
 
 
