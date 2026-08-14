@@ -1,7 +1,6 @@
 
 # Function to display sensor data
-def display_sensor_data(soil_moisture, temperature, humidity,
-                        rainfall, tank_level):
+def display_sensor_data(soil_moisture, temperature, humidity,rainfall, tank_level):
 
     print("\n---------- SENSOR DATA ----------")
     print("Soil Moisture :", soil_moisture, "%")
