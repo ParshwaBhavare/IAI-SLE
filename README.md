@@ -1,43 +1,247 @@
-# IAI-SLE
-Self Learning Activity
-# Simple Python AI Agent
+#  Smart Irrigation AI Agent
 
-A beginner-friendly, text-based conversational AI agent implemented in Python. This project demonstrates basic programming principles like infinite loops, conditional statements, and handling user input without relying on complex external libraries.
+##  Project Description
 
-## Features
+The **Smart Irrigation AI Agent** is a simple Python-based AI agent that makes irrigation decisions using sensor data.
 
-- **Interactive Loop**: Stays active and continuously prompts for input until told to close.
-- **Keyword Recognition**: Responds to everyday text commands.
-- **Fallback Catch-All**: Gracefully handles unknown phrases with a default reply.
+The system takes readings from different sensors such as:
 
-## Supported Commands
+* Soil Moisture
+* Temperature
+* Humidity
+* Rainfall
+* Water Tank Level
 
-The agent is configured to recognize the following phrases:
-- `hello` - Greets the user.
-- `help` - Offers basic guidance.
-- `give me link of github` - Provides the URL for GitHub.
-- `bye` / `exit` - Terminates the program.
+Based on these values, the AI agent calculates an **irrigation score** and decides whether the water pump should be turned **ON or OFF**.
 
-## Prerequisites
+It also calculates the required watering time based on the soil moisture level.
 
-- Python 3.x installed on your computer.
 
-## How to Run
 
-1. Clone or download this repository to your local machine.
-2. Open your terminal or command prompt.
-3. Navigate to the folder containing `agent.py`.
-4. Execute the script using the following command:
+##  Objectives
+
+The main objectives of this project are:
+
+1. To understand the basic working of an AI agent.
+2. To use sensor data for decision-making.
+3. To determine whether irrigation is required.
+4. To prevent unnecessary water usage.
+5. To calculate suitable watering time.
+6. To demonstrate AI-based decision-making using simple Python programming.
+
+---
+
+##  How the System Works
+
+The program follows these steps:
+
+
+Sensor Input
+     ↓
+Display Sensor Data
+     ↓
+Calculate Irrigation Score
+     ↓
+Check Water Tank Level
+     ↓
+Check Rainfall
+     ↓
+AI Irrigation Decision
+     ↓
+Calculate Watering Time
+     ↓
+Pump ON / Pump OFF
+
+
+
+
+##  Input Used
+
+| Input            | Purpose                                     |
+| ---------------- | ------------------------------------------- |
+| Soil Moisture    | Determines how dry or wet the soil is       |
+| Temperature      | Checks environmental temperature            |
+| Humidity         | Determines moisture present in the air      |
+| Rainfall         | Checks whether sufficient rain is occurring |
+| Water Tank Level | Checks available water for irrigation       |
+
+
+
+##  AI Decision Logic
+
+The program calculates an irrigation score.
+
+### Soil Moisture
+
+If soil moisture is below 40%:
+
+Score +3
+
+This indicates that the soil may need water.
+
+### Temperature
+
+If temperature is above 35°C:
+
+Score +2
+
+High temperature can increase water requirements.
+
+### Humidity
+
+If humidity is below 40%:
+
+Score +2
+
+
+Low humidity indicates a drier environment.
+
+### Rainfall
+
+If rainfall is above 5 mm:
+
+Score -4
+
+Rainfall reduces the need for irrigation.
+
+##  Pump Decision
+
+The final decision is made using the following conditions:
+
+### 1. Low Water Tank Level
+
+If the tank level is below 20%:
+
+PUMP OFF
+
+Reason:
+
+Water tank level is too low.
+
+### 2. Sufficient Rainfall
+
+If rainfall is greater than 5 mm:
+
+PUMP OFF
+
+Reason:
+
+Rainfall is sufficient.
+
+### 3. High Irrigation Score
+
+If the irrigation score is 4 or greater:
+
+PUMP ON
+
+
+Reason:
+
+Plants need water.
+
+### 4. Otherwise
+
+PUMP OFF
+
+Reason:
+
+Plants have enough water.
+
+
+##  Watering Time
+
+The watering time depends on soil moisture.
+
+| Soil Moisture | Watering Time |
+| ------------- | ------------: |
+| Below 20%     |    15 minutes |
+| 20%–39%       |    10 minutes |
+| 40%–59%       |     5 minutes |
+| 60% or above  |     0 minutes |
+
+---
+
+##  Technologies Used
+
+* **Python**
+* Conditional statements
+* Functions
+* User input
+* Basic AI decision-making
+* Sensor-data simulation
+
+
+
+## ▶️ How to Run
+
+### Step 1: Install Python
+
+Make sure Python is installed on your computer.
+
+Check using:
 
 ```bash
-python agent.py
+python --version
 ```
 
-## How It Works
+### Step 2: Open the Project
 
-The script operates through five foundational logic components:
-1. **Infinite Loop (`while True:`)**: Keeps the program running indefinitely so you can have a continuous conversation.
-2. **Input Capture (`input()`)**: Pauses execution to capture whatever you type in the terminal.
-3. **Control Flow (`if`/`elif`/`else`)**: Tests your input text against pre-programmed strings to trigger the right answer.
-4. **Breaking Statements (`break`)**: Instantly stops the active execution loop when `exit` or `bye` is invoked.
-5. **Fallback Catch-All (`else`)**: Safely triggers a standard error message whenever input words do not match any rules.
+Open the project folder in VS Code.
+
+### Step 3: Run the Program
+
+Open the VS Code terminal and execute:
+
+```bash
+python irrigation_agent.py
+```
+
+### Step 4: Enter Sensor Values
+
+The program will ask for:
+
+```text
+Enter soil moisture (%):
+Enter temperature (°C):
+Enter humidity (%):
+Enter rainfall (mm):
+Enter water tank level (%):
+```
+
+Enter the required values.
+
+---
+
+## 🧪 Example
+
+### Input
+
+```text
+Enter soil moisture (%): 25
+Enter temperature (°C): 38
+Enter humidity (%): 35
+Enter rainfall (mm): 0
+Enter water tank level (%): 80
+```
+
+### AI Decision
+
+```text
+Irrigation Score: 7
+Decision: PUMP ON
+Reason: Plants need water.
+```
+
+### Final Action
+
+```text
+Water Pump: ON
+Watering Time: 10 minutes
+```
+
+---
+
+
+
+
+This project provides a basic foundation for developing a more advanced **AI and IoT-based smart agriculture system**.
