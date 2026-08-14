@@ -172,17 +172,15 @@ The watering time depends on soil moisture.
 
 
 
-## ▶️ How to Run
+##  How to Run
 
 ### Step 1: Install Python
 
 Make sure Python is installed on your computer.
 
 Check using:
-
-```bash
 python --version
-```
+
 
 ### Step 2: Open the Project
 
@@ -192,56 +190,40 @@ Open the project folder in VS Code.
 
 Open the VS Code terminal and execute:
 
-```bash
 python irrigation_agent.py
-```
 
 ### Step 4: Enter Sensor Values
 
 The program will ask for:
 
-```text
 Enter soil moisture (%):
 Enter temperature (°C):
 Enter humidity (%):
 Enter rainfall (mm):
 Enter water tank level (%):
-```
 
 Enter the required values.
 
----
 
-## 🧪 Example
+##  Example
 
 ### Input
 
-```text
 Enter soil moisture (%): 25
 Enter temperature (°C): 38
 Enter humidity (%): 35
 Enter rainfall (mm): 0
 Enter water tank level (%): 80
-```
 
 ### AI Decision
 
-```text
 Irrigation Score: 7
 Decision: PUMP ON
 Reason: Plants need water.
-```
 
 ### Final Action
 
-```text
 Water Pump: ON
 Watering Time: 10 minutes
-```
-
----
 
 
-
-
-This project provides a basic foundation for developing a more advanced **AI and IoT-based smart agriculture system**.
