@@ -25,7 +25,7 @@ I asked AI to calculate watering time based on soil moisture.
 I asked AI to explain the Python code in simple language so that I could understand every function and condition.
 
 
- AI Contribution                                                                                                                         
+** AI CONTRIBUTION **                                                                                                                         
  Soil moisture condition <br>
  AI suggested checking whether soil moisture is below 40%.<br>                      
  Temperature condition <br>
